@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+html,body{
+	width: 100%;
+	font-size: 14px;
+	line-height: 1.4286;
+	font-family: "Microsoft yahei";
+}
+body{
+	position: relative;
+	min-width: 1349px;
+}
+a,
+a:focus,
+a:hover,
+a:active{
+	text-decoration: none;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}

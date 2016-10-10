@@ -1,0 +1,379 @@
+.tencent,
+.nav{
+	max-width: 1620px;
+	/*margin-left: -810px;*/
+}
+.tencent,
+.login-group,
+.login-bg{
+	width: 100%;
+}
+.tencent{
+	position: absolute;
+	/*left: 50%;*/
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+.tencent-logo{
+	width: 50px;
+}
+/*字体颜色类*/
+.color-white{
+	color: #fff;
+}
+.color-orange{
+	color: #FF920B;
+}
+.color-light-gray{
+	color: #ccc;
+}
+/*字体大小类*/
+.font-16{
+	font-size: 16px !important;
+}
+.font-18{
+	font-size: 18px !important;
+}
+.font-21{
+	font-size: 21px !important;
+}
+.font-32{
+	font-size: 32px;
+}
+/*背景颜色类*/
+.bg-orange{
+	background-color: #FF920B;
+}
+.bg-white{
+	background-color: #fff; 
+}
+/*间距类*/
+/*其他样式*/
+.header-shell{
+	padding: 15px 50px;
+    box-sizing: border-box;
+}
+.tencent-header{
+	position: relative;
+	height: 45px;
+}
+.header-title,
+.header-search,
+.header-user{
+	position: absolute;
+	top: 0;
+}
+.header-title{
+	left: 0;
+	display: inline;
+}
+.header-title-link{
+	display: block;
+}
+.header-title-link:active{
+	color: #fff;
+}
+.tencent-logo,
+.logo-word{
+	vertical-align: middle;
+}
+.header-search{
+	left: 25%;
+	padding: 0 0 0 15px;
+    box-sizing: border-box;
+    border-radius: 21px;
+    background-color: #fff;
+}
+.search-input{
+	width: 450px;
+	height: 40px;
+	border: none;
+	outline: none;
+	text-indent: 8px;
+	background-color: transparent;
+}
+.search-word{
+	width: 100px;
+	height: 40px;
+	border: none;
+	outline: none;
+	border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+    cursor: pointer;
+}
+.header-user{
+	right: 0;
+}
+.logo-word{
+	font-style: italic;
+	font-weight: 500; 
+}
+.user-group .user-list{
+	display: inline-block;
+	height: 43px;
+}
+.user-list-link{
+	color: #A5A5A5;
+	transition: color .3s ease;
+	-webkit-transition: color .3s ease;
+}
+.user-list-link:focus,
+.user-list-link:active,
+.user-list-link:hover{
+	color: #333;
+}
+.user-list + .user-list{
+	margin-left: 10px;
+}
+.user-login{
+	width: 37px;
+    border-radius: 50%;
+}
+/*user-hint start*/
+.user-shell{
+	padding: 0 50px;
+	box-sizing: border-box;
+}
+.user-hint{
+	position: relative;
+	z-index: 9;
+}
+.play-record-show{
+	position: relative;
+	/*opacity: 0;*/
+	display: none;
+	transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+.play-record{
+	position: absolute;
+	top: -11px;
+	right: 0;
+	width: 400px;
+	padding: 20px 0;
+    box-sizing: border-box;
+    border-top: 2px solid #FF920B;
+}
+.user-hint .play-record .fa-clock-o.font-81{
+	font-size: 81px; 
+}
+.record-title{
+	color: #ABABAB;
+}
+.record-start{
+	display: block;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 8px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #FF920B;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    width: 150px;
+    margin: 15px auto 0;
+}
+.record-start:hover,
+.record-start:active,
+.record-start:focus{
+	background-color: #FF920B;
+	color: #fff;
+}
+.triangle-up-orangle,
+.triangle-up-white{
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+.triangle-up-orangle{
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #FF920B;
+}
+.triangle-up-white{
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #fff;
+}
+.play-record-show .triangle-up-orangle{
+	top: -19px;
+    right: 207px;
+}
+.play-record-show .triangle-up-white{
+	top: -16px;
+    right: 210px;
+}
+.vip-show{
+	position: relative;
+	/*opacity: 0;*/
+	display: none;
+}
+.vip{
+	position: absolute;
+	top: -11px;
+	right: 0;
+	width: 345px;
+	padding: 40px 0 20px;
+    box-sizing: border-box;
+	border-top: 2px solid #FF920B;
+}
+.vip-btn{
+	display: block;
+	border: none;
+	outline: none;
+	background-color: #D53D35; 
+	padding: 8px 0;
+    box-sizing: border-box;
+    border-radius: 21px;
+    width: 224px;
+    margin: auto;
+}
+.vip-show .triangle-up-orangle{
+	top: -19px;
+    right: 52px; 
+}
+.vip-show .triangle-up-white{
+	top: -16px;
+    right: 55px;
+}
+.vip-title{
+	color: #A2A2A2;
+	padding: 8px 0;
+    box-sizing: border-box;
+}
+.vip-login{
+	color: #D53D35;
+}
+.vip-privilege{
+	padding: 15px 0 0;
+	box-sizing: border-box;
+}
+.vip-privilege-link{
+	display: inline-block;
+	padding: 0 24px;
+	box-sizing: border-box;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+.vip-privilege-link:focus,
+.vip-privilege-link:hover,
+.vip-privilege-link:active{
+	color: #FA5058;
+}
+.vip-link-word{
+	color: #A2A2A2;
+}
+.login-show{
+	position: relative;
+	/*opacity: 0;*/
+	display: none;
+}
+.login-hint{
+	position: absolute;
+	top: -11px;
+	right: 0;
+	width: 350px;
+	padding: 35px 20px;
+    box-sizing: border-box;
+    border-top: 2px solid #FF920B;
+}
+.login-hint-child{
+	display: inline-block;
+}
+.login-hint-pic{
+	vertical-align: middle;
+}
+.login-hint-content{
+	vertical-align: top;
+	height: 86px;
+	margin-left: 15px;
+}
+.hint-content-word{
+	margin-bottom: 16px;
+}
+.login-show .triangle-up-orangle{
+	top: -19px;
+    right: 7px; 
+}
+.login-show .triangle-up-white{
+	top: -16px;
+    right: 10px; 
+}
+.hint-content-link{
+	display: block;
+	padding: 8px 0;
+    box-sizing: border-box;
+    border-radius: 21px;
+    width: 132px;
+}
+/*user-hint end*/
+/*login-group start*/
+.login-group{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	z-index: 8;
+}
+.login-bg{
+	height: inherit;
+	background-color: #000;
+	opacity: .5;
+}
+.login-gn{
+	position: absolute;
+	top: 0;
+	left: 25%;
+	width: 666px;
+	height: auto;
+	background-color: #fff;
+}
+.login-gn-title{
+	background-color: #F1F1F1;
+	font-size: 15px;
+	padding: 15px 0;
+    box-sizing: border-box;
+}
+.login-gn-title .fa.fa-close{
+	position: absolute;
+	top: 13px;
+    right: 15px;
+	font-size: 24px;
+	color: #999;
+	transition: color .3s ease;
+	-webkit-transition: color .3s ease;
+	cursor: pointer;
+}
+.login-gn-title .fa.fa-close:focus,
+.login-gn-title .fa.fa-close:hover,
+.login-gn-title .fa.fa-close:active{
+	color: red;
+}
+.login-gn-content{
+	padding: 66px 0;
+    box-sizing: border-box;
+}
+.gn-content-pic{
+	margin-bottom: 25px;
+}
+.gn-content-btn{
+    padding: 10px 0;
+    box-sizing: border-box;
+    border-radius: 21px;
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+.gn-content-btn .fa{
+	font-size: 18px;
+    margin-right: 9px;
+}
+.gn-content-blue{
+	background-color: #19AEF2;
+}
+.gn-content-green{
+	background-color: #0BC131;
+}
+/*login-group end*/
