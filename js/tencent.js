@@ -163,12 +163,12 @@
 			small_index = 0;
 		}
 	}
-	var timing = setInterval(small_cycle,2000);
+	var timing = setInterval(small_cycle,3000);
 	//鼠标划入时，定时器停止工作，当鼠标划出时，定时器继续工作
 	$('.ch-rt-col .star-group').hover(function() {
 		clearInterval(timing);
 	}, function() {
-		timing = setInterval(small_cycle,2000);
+		timing = setInterval(small_cycle,3000);
 	});
 	//鼠标划入轮播标志点时，图片相应进行切换
 	$('.ch-rt-col .star-circle .star-small').hover(function(){
@@ -177,7 +177,7 @@
 		$(this).addClass('small-active').siblings().removeClass('small-active');
 		$('.ch-rt-col .star-group .star').eq(sm_index).addClass('star-active').siblings().removeClass('star-active');
 	},function(){
-		timing = setInterval(small_cycle,2000);
+		timing = setInterval(small_cycle,3000);
 	})
 
 
@@ -200,4 +200,23 @@
 		}
 		$(this).find('.sp-big').removeClass('sp-big-active');
 	});
+
+	//返回顶部效果
+	right_Bar();
+	function right_Bar(){
+		$(window).scroll(function(){
+			var scroll_top = $(document).scrollTop();
+			if(scroll_top > 200){
+				$('.return-top').fadeIn(500);
+			}else{
+				$('.return-top').fadeOut(500);
+			}
+		});
+		$('.return-top .fa.fa-angle-up').on('click', function(event) {
+			event.preventDefault();
+			$('html,body').animate({scrollTop:0},100);
+			$('.return-top').hide();
+		});
+	}
+
 })(jQuery);

@@ -20,6 +20,10 @@
 	padding: 15px;
     box-sizing: border-box;
 }
+.choiceness-title{
+	padding-right: 12px;
+	box-sizing: border-box;
+}
 .title-name{
 	font-size: 26px;
 }
@@ -78,7 +82,6 @@
 .item-link,
 .item-link,
 .sp-member-link,
-.star-active,
 .movie-link{
 	display: block;
 }
@@ -256,14 +259,11 @@
 	margin-left: 12px;
 	color: #AFAFAF;
 }
-/*.wei-pinhui-link,
-.movie-link{
-	display: block;
-}*/
 .wei-pinhui-link,
 .ch-rt-rel,
 .choiceness-right .rt-col-link,
-.springback{
+.springback,
+.star-group{
 	position: relative;
 }
 .wei-pinhui{
@@ -285,11 +285,17 @@
 .font-weigth-100{
 	font-weight: 100;
 }
-.mark-rt-27{
-	/*right: 27px;*/
+.star-group{
+	height: 148px;
 }
 .star{
+	position: absolute;
+	left: 0;
+	top: 0;
 	display: none;
+}
+.star-active{
+	display: block;
 }
 .star-circle{
 	position: absolute;
