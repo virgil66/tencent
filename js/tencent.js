@@ -206,10 +206,36 @@
 	function right_Bar(){
 		$(window).scroll(function(){
 			var scroll_top = $(document).scrollTop();
+			//返回顶部图标的判断
 			if(scroll_top > 200){
 				$('.return-top').fadeIn(500);
 			}else{
 				$('.return-top').fadeOut(500);
+			}
+			//页面搜索框部分滚动
+			if(scroll_top > 400){
+				$('.tencent').css({
+					'position': 'fixed',
+					'background-color': '#FCFCFC',
+					'z-index': '4',
+					'box-shadow': '#666 0 -2px 10px 2px'
+				},500);
+				$('.tencent .header-search').css({
+					'border': '1px solid #FF920B'
+				});
+				$('.tencent .logo-word').css({
+					'color': 'green'
+				});
+			}else{
+				$('.tencent').css({
+					'position': 'absolute',
+					'background-color': 'transparent',
+					'z-index': '3',
+					'box-shadow': 'none'
+				},500);
+				$('.tencent .logo-word').css({
+					'color': '#FCFCFC'
+				});
 			}
 		});
 		$('.return-top .fa.fa-angle-up').on('click', function(event) {
